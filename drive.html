@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>drawing shapes</title>
+  </head>
+  <body onload="main()">
+
+    <canvas id="canvas" width="400" height="400">
+    Please use a browser that supports "canvas"
+    <script src="./src/DrawShapes.js"></script>
+    <script src="./lib/webgl-debug.js"></script>
+    <script src="./lib/webgl-utils.js"></script>
+    <script src="./lib/cuon-matrix.js"></script>
+    <script src="./lib/cuon-utils.js"></script>
+    </canvas>
+
+    <div class="clear canvas button">
+      <input type="button" id="cButton" value="Clear Canvas">
+    </div>
+
+    <div class="Shape Buttons">
+      <p><b>Drawing Mode:</b></p>
+      <input type="button" id="sqButton" value="Squares">
+      <input type="button" id="trButton" value="Triangles">
+      <input type="button" id="ciButton" value="Circles">
+      <input type="button" id="hgButton" value="Hourglass">
+      <input type="button" id="triButton" value="Triforce">
+    </div>
+
+    <div class="SLiders">
+
+      <p><b>Shape Color:</b></p>
+      Red<input type="range" id="redSlider" name="redSlider" min="0" max="255">
+      Green<input type="range" id="greenSlider" name="greenSlider" min="0" max="255">
+      Blue<input type="range" id="blueSlider" name="blueSlider" min="0" max="255">
+
+      <br>
+      Shape Size:<input type="range" id="sizeSlider" name="sizeSlider" min="1" max="400">
+      (Circles) Segment Count:<input type="range" id="csSlider" name="csSlider" min="3" max="20">
+      <br>
+      <p><b>Background Color Selector:</b></p>
+      Red<input type="range" id="redBSlider" name="redSlider" min="0" max="255">
+      Green<input type="range" id="greenBSlider" name="greenSlider" min="0" max="255">
+      Blue<input type="range" id="blueBSlider" name="blueSlider" min="0" max="255">
+      <br>
+      <input type="button" id="bcButton" value="Clear and Update Background">
+    </div>
+    <br>
+    Awesomeness: Added square,hourglass and triforce shape! Also added the ability to change background color!
+
+  </body>
+</html>
